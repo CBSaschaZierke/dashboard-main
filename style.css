@@ -8,6 +8,12 @@
         font-family: "Segoe UI", sans-serif;
     }
 
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     nav{
         display: flex;
         height: 5vh;
@@ -90,7 +96,7 @@
 
     .container{
         position: absolute;
-        background-image: url("http://www.pcubeconsultants.com/img_external/gallery/commercial/turquoise3_scr.jpg");
+        /*background-image: url("http://www.pcubeconsultants.com/img_external/gallery/commercial/turquoise3_scr.jpg");*/
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
