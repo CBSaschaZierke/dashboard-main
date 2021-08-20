@@ -1,0 +1,240 @@
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: #333645;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    nav{
+        display: flex;
+        height: 5vh;
+        width: 50vw;
+        justify-content: space-around;
+        background-color: rgba(0,0,0,0.3);
+        margin-left: 50vw;
+        border-radius: 15px 0 0 15px;
+
+    }
+
+    .navbtn{
+        margin-top: .5vh;
+        margin-left: .5vw;
+        background-color: transparent;
+        border: none;
+        border-radius: 20px;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: .5vh;
+        color: white;
+    }
+
+    .logo{
+        margin-top: .5vh;
+        margin-bottom: .5vh;
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40vh;
+    }
+
+    .card{
+        background-color: rgba(255,255,255,0.3);
+        color: white;
+        border-radius: 10px;
+        border: 2px solid white;
+        width: 20vw;
+        height: 20vh;
+        padding: 1vh 1vw;
+    }
+
+    .cardkopf{
+        display: flex;
+    }
+
+    .arrowimg{
+        padding-top: 2vh;
+        height: 5vh;
+        width: 4vh;
+        opacity: 1;
+        animation-name: fadeIn;
+  	 	animation-duration: 5s;
+    }
+
+@keyframe fadeIn{
+  0% {opacity:0;}
+  50% {opacity:0;}
+  100 {opacity:1;}
+}
+
+    .cardheader{
+        margin: 0 1vh;
+        font-weight: 700;
+        font-size: 4rem;
+    }
+
+    .border{
+        width: 5vw;
+        height: 1vh;
+        background-color: red;
+    }
+
+    .cardtext{
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    .container{
+        position: absolute;
+        background-image: url("http://www.pcubeconsultants.com/img_external/gallery/commercial/turquoise3_scr.jpg");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .footer{
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        color: white;
+        height: 10vh;
+        width: 100vw;
+        background-color: rgba(255,255,255,0.3);
+        border-top: 2px solid white;
+    }
+
+    .header{
+        position: absolute;
+        margin: .5vh 0 .5vh 0;
+        left: 0;
+        width: 9vw;
+        height: 9vh;
+        border-radius: 0 20px 20px 0;
+        padding-left: 2vw;
+        background-color: #B4C6D1;
+        z-index: 2;
+        font-weight: 800;
+    }
+
+    .subheader{
+        position: absolute;
+        margin: .5vh 0 .5vh 0;
+        left: 8vw;
+        width: 7vw;
+        height: 9vh;
+        background-color: #859FAF;
+        border-radius: 0 20px 20px 0;
+        padding-left: 1.5vw;
+        font-weight: 300;
+    }
+
+
+    .slider {
+  width: 100vw;
+  /*text-align: center;*/
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+
+.as{
+    text-align: center;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 70vh;
+  /*margin-right: 50px;*/
+  border-radius: 10px;
+  /*background: #eee;*/
+  /*transform-origin: center center;
+  transform: scale(1);*/
+  /*transition: transform 0.5s;*/
+  /*position: relative;*/
+
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*font-size: 100px;*/
+}
+.slides > div:target {
+/*   transform: scale(0.8); */
+}
+
+/*
+.author-info {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+.author-info a {
+    color: white;
+}*/
+
+.as > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
