@@ -13,3 +13,15 @@ function showElement(){
             document.getElementById('lcheader').innerHTML = data.item
         }))
 }
+
+i=0
+
+function changeHeadline(){
+    headlines = ['Supercore', 'Core/Core Plus' , 'Value Added', 'Opportunity', 'Development', 'Workout']
+    el = document.getElementById('hsheader')
+    el.innerHTML = headlines[i]
+    i++
+
+    if(i == headlines.length)
+        i = 0
+}

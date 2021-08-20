@@ -1,4 +1,4 @@
-    html, body{
+    html, body, h1{
         margin: 0;
         padding: 0;
     }
@@ -136,6 +136,91 @@
         font-weight: 300;
     }
 
+    .headers{
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .hs{
+    text-align: center;
+}
+
+    .hs > a {
+  display: inline-flex;
+  width: 3rem;
+  height: 1.5rem;
+  background: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+    color: white;
+}
+.hs > a:active {
+  background: white;
+}
+.hs > a:focus {
+  background: white;
+}
+
+.headerslides {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+
+.hsheader{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.headerslides > div {
+    overflow: hidden;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 5vh;
+  /*margin-right: 50px;*/
+  border-radius: 10px;
+  /*background: #eee;*/
+  /*transform-origin: center center;
+  transform: scale(1);*/
+  /*transition: transform 0.5s;*/
+  /*position: relative;*/
+
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*font-size: 100px;*/
+}
+
+.headerslides::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.headerslides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.headerslides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 
     .slider {
   width: 100vw;
@@ -217,24 +302,18 @@
   display: inline-flex;
   width: 1.5rem;
   height: 1.5rem;
-  background: white;
+  background: rgba(0,0,0, 0.5);
   text-decoration: none;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   margin: 0 0 0.5rem 0;
   position: relative;
+    color: white;
 }
-.slider > a:active {
-  top: 1px;
+.as > a:active {
+  background: white;
 }
-.slider > a:focus {
-  background: #000;
-}
-
-/* Don't need button navigation */
-@supports (scroll-snap-type) {
-  .slider > a {
-    display: none;
-  }
+.as > a:focus {
+  background: white;
 }
