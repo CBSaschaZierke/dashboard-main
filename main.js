@@ -16,6 +16,9 @@ function showElement(){
 
 let slideIndex = 0;
 
+// animation end like https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_animationstart
+let currentSlider;
+
 function autoShowSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -25,6 +28,7 @@ function autoShowSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
+  currentSlider = slides[slideIndex-1];
   setTimeout(autoShowSlides, 10000);
 }
 
