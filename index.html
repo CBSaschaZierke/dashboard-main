@@ -6,7 +6,7 @@
     <script type='text/javascript' src="/main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="currentSlide(1)">
     <div class="container">
     <nav>
         <button class="navbtn">Home</button>
@@ -24,10 +24,10 @@
             </div>
         </div>
 
-        <div class="slider">
+        <div class="slideshow-container">
 
-            <div class="slides">
-                <div id="slide-1">
+                <div class="mySlides fade">
+                    <h1>SuperCore</h1>
                     <div class="info">
                     <div class="card">
                         <div class="cardkopf">
@@ -50,7 +50,8 @@
                     </div>
                 </div>
                 </div>
-                <div id="slide-2">
+                <div class="mySlides fade">
+                    <h1>Core/Core Plus</h1>
                     <div class="info">
                     <div class="card">
                         <div class="cardkopf">
@@ -73,7 +74,8 @@
                     </div>
                 </div>
                 </div>
-                <div id="slide-3">
+                <div class="mySlides fade">
+                    <h1>Value Added</h1>
                     <div class="info">
                     <div class="card">
                         <div class="cardkopf">
@@ -96,7 +98,8 @@
                     </div>
                 </div>
                 </div>
-                <div id="slide-4">
+                <div class="mySlides fade">
+                    <h1>Opportunity</h1>
                     <div class="info">
                     <div class="card">
                         <div class="cardkopf">
@@ -119,7 +122,8 @@
                     </div>
                 </div>
                 </div>
-                <div id="slide-5">
+                <div class="mySlides fade">
+                    <h1>Development</h1>
                     <div class="info">
                     <div class="card">
                         <div class="cardkopf">
@@ -142,7 +146,8 @@
                     </div>
                 </div>
                 </div>
-                <div id="slide-6">
+                <div class="mySlides fade">
+                    <h1>Workout</h1>
                     <div class="info">
                     <div class="card">
                         <div class="cardkopf">
@@ -165,14 +170,14 @@
                     </div>
                 </div>
                 </div>
-            </div>
-            <div class="as" onclick="changeHeadline()">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-                <a href="#slide-4"></a>
-                <a href="#slide-5"></a>
-                <a href="#slide-6"></a>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
             </div>
         </div>
 
