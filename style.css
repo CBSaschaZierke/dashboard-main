@@ -11,10 +11,10 @@
     nav{
         display: flex;
         height: 5vh;
-        width: 50vw;
+        width: 60vw;
         justify-content: space-around;
         background-color: rgba(0,0,0,0.3);
-        margin-left: 50vw;
+        margin-left: 40vw;
         border-radius: 15px 0 0 15px;
 
     }
