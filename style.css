@@ -17,10 +17,10 @@
     nav{
         display: flex;
         height: 5vh;
-        width: 60vw;
+        width: 70vw;
         justify-content: space-around;
         background-color: rgba(0,0,0,0.3);
-        margin-left: 40vw;
+        margin-left: 30vw;
         border-radius: 15px 0 0 15px;
 
     }
@@ -28,6 +28,7 @@
     .navbtn{
         margin-top: .5vh;
         margin-left: .5vw;
+        width: 10vw;
         background-color: transparent;
         border: none;
         border-radius: 20px;
@@ -35,6 +36,10 @@
         font-weight: 400;
         margin-bottom: .5vh;
         color: white;
+    }
+
+    .btnactive{
+        background-color: red;
     }
 
     .logo{
@@ -111,7 +116,7 @@
         left: 0;
         color: white;
         height: 7.5vh;
-        width: 100vw;
+
         background-color: rgba(255,255,255,0.3);
         border-top: 2px solid white;
     }
@@ -128,12 +133,12 @@
         z-index: 2;
     }
 
-    .header > h3, .subheader > h3{
+    .header > h3, .subheader > h3, .footercontent > h3{
         font-size: 1.25rem;
         font-weight: 400;
     }
 
-    .header > h1, .subheader > h1{
+    .header > h1, .subheader > h1, .footercontent > h1{
         padding-top: .5vh;
         font-size: 1.5rem;
         font-weight: 700;
@@ -149,7 +154,24 @@
         border-radius: 0 20px 20px 0;
         padding-left: 2.5vw;
         font-weight: 300;
+        z-index: 1;
     }
+
+    .footercontent{
+        position: relative;
+        margin: .5vh 0 .5vh 10vw;
+        width: 10vw;
+        height: 6.5vh;
+        left: 120vw;
+        animation: footerslide 30s linear infinite;
+        z-index: 0;
+    }
+
+    @keyframes footerslide {
+        from {left:120vw}
+        to {left: -100vw}
+    }
+
 
     .headers{
         width: 100vw;
@@ -188,7 +210,7 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .dot:hover, dot:focus {
   background-color: #717171;
 }
 
