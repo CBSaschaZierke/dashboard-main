@@ -16,19 +16,15 @@ function showElement(){
 
 let slideIndex = 0;
 
-// animation end like https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_animationstart
-let currentSlider;
-
 function autoShowSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+      slides[i].style.display = "none";
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  currentSlider = slides[slideIndex-1];
   setTimeout(autoShowSlides, 10000);
 }
 
@@ -49,5 +45,6 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
+  testslider = slides[slideIndex-1]
   dots[slideIndex-1].className += " active";
 }

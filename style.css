@@ -1,4 +1,4 @@
-    html, body, h1{
+    html, body, h1, h3{
         margin: 0;
         padding: 0;
     }
@@ -110,7 +110,7 @@
         bottom: 0;
         left: 0;
         color: white;
-        height: 10vh;
+        height: 7.5vh;
         width: 100vw;
         background-color: rgba(255,255,255,0.3);
         border-top: 2px solid white;
@@ -121,23 +121,33 @@
         margin: .5vh 0 .5vh 0;
         left: 0;
         width: 9vw;
-        height: 9vh;
+        height: 6.5vh;
         border-radius: 0 20px 20px 0;
-        padding-left: 2vw;
+        padding-left: 1vw;
         background-color: #B4C6D1;
         z-index: 2;
-        font-weight: 800;
+    }
+
+    .header > h3, .subheader > h3{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .header > h1, .subheader > h1{
+        padding-top: .5vh;
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 
     .subheader{
         position: absolute;
         margin: .5vh 0 .5vh 0;
         left: 8vw;
-        width: 7vw;
-        height: 9vh;
+        width: 10vw;
+        height: 6.5vh;
         background-color: #859FAF;
         border-radius: 0 20px 20px 0;
-        padding-left: 1.5vw;
+        padding-left: 2.5vw;
         font-weight: 300;
     }
 
@@ -191,21 +201,21 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0.2}
+  from {opacity: 0}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: 0.2}
+  from {opacity: 0}
   to {opacity: 1}
 }
 
-@-webkit-keyframes fade {
+@keyframes fadeOut {
   from {opacity: 1}
   to {opacity: 0}
 }
 
-@keyframes fadeOut {
+@-webkit-keyframes fadeOut {
   from {opacity: 1}
   to {opacity: 0}
 }
