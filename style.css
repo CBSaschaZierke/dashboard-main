@@ -203,10 +203,11 @@ html, body, h1, h3{
     .footer-item{
         display:block;
         position: relative;
-        margin: .5vh 2vw .5vh 0;
-        width: 12vw;
+        margin-top: .5vh;
+        margin-left: 10vw;
+        min-width: 20vw;
         height: 6.5vh;
-        left: 120vw;
+        left: 50vw;
         z-index: 0;
         overflow: hidden;
     }
