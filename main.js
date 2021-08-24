@@ -68,7 +68,7 @@ function autoShowSlidesHD() {
   }
   slideHDIndex++;
   if (slideHDIndex > slides.length) {slideHDIndex = 1}
-  slides[slideHDIndex-1].style.display = "block";
+  slides[slideHDIndex-1].style.display = "grid";
   dots[slideHDIndex-1].className += " active";
   setTimeout(autoShowSlidesHD, 10000);
 }
