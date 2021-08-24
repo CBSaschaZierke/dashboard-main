@@ -73,9 +73,15 @@
         padding: 1vh 1vw;
     }
 
+    .hottext{
+        margin:.5vh 2vw 0 0;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
     .imgprew{
         height: 13vh;
-        width: 20vw;
+        width: 13vw;
         margin-bottom: .5vh;
     }
 
@@ -212,6 +218,27 @@
   display: none;
 }
 
+.mySlidesHotDeal {
+  display: none;
+}
+
+.mySlidesHotDeal > h1{
+    color: white;
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.mySlidesHotDeal > h3{
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 .mySlides > h1{
     color: white;
     text-align: center;
@@ -220,6 +247,7 @@
     font-size: 3rem;
     font-weight: 700;
 }
+
 
 /* The dots/bullets/indicators */
 .dot {

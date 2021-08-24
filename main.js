@@ -54,8 +54,48 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+let slideHDIndex = 0;
+
+function autoShowSlidesHD() {
+  let i;
+  let slides = document.getElementsByClassName("mySlidesHotDeal");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++){
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideHDIndex++;
+  if (slideHDIndex > slides.length) {slideHDIndex = 1}
+  slides[slideHDIndex-1].style.display = "block";
+  dots[slideHDIndex-1].className += " active";
+  setTimeout(autoShowSlidesHD, 10000);
+}
+
+function currentSlideHD(n) {
+  showSlidesHD(slideHDIndex = n);
+}
+
+function showSlidesHD(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlidesHotDeal");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideHDIndex = 1}
+  if (n < 1) {slideHDIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideHDIndex-1].style.display = "block";
+  dots[slideHDIndex-1].className += " active";
+}
+
 let divindex = 0
-    let divs = document.getElementsByClassName('footer-content')
+let divs = document.getElementsByClassName('footer-content')
+
 function footerautoslide(){
     let i
     let items = divs[divindex].getElementsByClassName('footer-item')
