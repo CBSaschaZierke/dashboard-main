@@ -28,7 +28,7 @@
     .navbtn{
         margin-top: .5vh;
         margin-left: .5vw;
-        width: 10vw;
+        width: 11vw;
         background-color: transparent;
         border: none;
         border-radius: 20px;
@@ -39,7 +39,7 @@
     }
 
     .btnactive{
-        background-color: red;
+        background-color: #BFAB60;
     }
 
     .logo{
@@ -54,13 +54,34 @@
     }
 
     .card{
-        background-color: rgba(255,255,255,0.3);
+        background-color: rgba(0,0,0,0.3);
         color: white;
         border-radius: 10px;
         border: 2px solid white;
         width: 20vw;
         height: 20vh;
         padding: 1vh 1vw;
+    }
+
+    .hotDealsCard{
+        background-color: rgba(0,0,0,0.3);
+        color: white;
+        border-radius: 10px;
+        border: 2px solid white;
+        width: 20vw;
+        height: 30vh;
+        padding: 1vh 1vw;
+    }
+
+    .imgprew{
+        height: 13vh;
+        width: 20vw;
+        margin-bottom: .5vh;
+    }
+
+    .Hotimg{
+        height: 4vh;
+        width: 4vh;
     }
 
     .cardkopf{
@@ -116,9 +137,12 @@
         left: 0;
         color: white;
         height: 7.5vh;
-
         background-color: rgba(255,255,255,0.3);
         border-top: 2px solid white;
+    }
+
+    .footer-content{
+        display: flex;
     }
 
     .header{
@@ -133,12 +157,12 @@
         z-index: 2;
     }
 
-    .header > h3, .subheader > h3, .footercontent > h3{
+    .header > h3, .subheader > h3, .footer-item > h3{
         font-size: 1.25rem;
         font-weight: 400;
     }
 
-    .header > h1, .subheader > h1, .footercontent > h1{
+    .header > h1, .subheader > h1, .footer-item > h1{
         padding-top: .5vh;
         font-size: 1.5rem;
         font-weight: 700;
@@ -157,13 +181,12 @@
         z-index: 1;
     }
 
-    .footercontent{
+    .footer-item{
         position: relative;
         margin: .5vh 0 .5vh 10vw;
         width: 10vw;
         height: 6.5vh;
         left: 120vw;
-        animation: footerslide 30s linear infinite;
         z-index: 0;
     }
 

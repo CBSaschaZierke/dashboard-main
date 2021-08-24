@@ -53,3 +53,24 @@ function showSlides(n) {
   testslider = slides[slideIndex-1]
   dots[slideIndex-1].className += " active";
 }
+
+let divindex = 0
+    let divs = document.getElementsByClassName('footer-content')
+function footerautoslide(){
+    let i
+    let items = divs[divindex].getElementsByClassName('footer-item')
+        divs[divindex].style.display = ''
+    for(i = 0; i < items.length; i++){
+        items[i].style.animation = 'footerslide 30s linear'
+    }
+    items[items.length-1].addEventListener('animationend', testfunc)
+}
+
+function testfunc(){
+    divs[divindex].style.display = 'none'
+    if(divindex+1 == divs.length){divindex = 0}
+    else {
+        divindex += 1
+    }
+    footerautoslide()
+}

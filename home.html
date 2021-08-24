@@ -6,7 +6,7 @@
     <script type='text/javascript' src="/main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="autoShowSlides()">
+<body onload="autoShowSlides(), footerautoslide()">
 <video muted autoplay loop>
     <source src="210819_Test.mp4" type="video/mp4">
 </video>
@@ -14,10 +14,10 @@
         <nav>
             <form>
                 <button class="navbtn btnactive" formaction="home.html">Home</button>
-                <button class="navbtn"  formaction="commercial.html">Commercial</button>
+                <button class="navbtn" formaction="commercial.html">Commercial</button>
                 <button class="navbtn" formaction="test.html">Residential</button>
                 <button class="navbtn" formaction="test.html">Health Care</button>
-                <button class="navbtn" formaction="fonts.html">Fonts</button>
+                <button class="navbtn" formaction="fonts.html">Fonds</button>
             </form>
         <img src="Bild3.png" alt="CapitalBay Logo" class="logo">
     </nav>
@@ -32,21 +32,42 @@
         <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                    <h1>SuperCore</h1>
+                    <h1>HotDeals</h1>
                     <div class="info">
-                    <div class="card">
+                    <div class="hotDealsCard">
                         <div class="cardkopf">
-                            <img src="https://i.ibb.co/ZfzMmNK/arrowupgreen.png" alt="" class="arrowimg" id="scarrow">
-                            <p class="cardheader" id="scheader" onload="showElement()">123</p>
+                            <img src="https://www.dreso.ae/fileadmin/_processed_/8/f/csm_Berlin-Europacity-cube-aussen_Washingtonplatz__c__CA_Immo_dd55703a1e.jpg" alt="" class="imgprew">
                         </div>
 
                         <div class="border" id="scborder"></div>
-                        <p class="cardtext">Income</p>
+                        <p class="cardtext">12.68 €/m²</p>
+                        <p class="cardtext">Berlin</p>
+                        <p class="cardtext">Opportunity</p>
+                        <p class="cardtext">+18% yield</p>
+                        <div class="cardkopf">
+                            <p class="cardtext">Hot Score</p>
+                            <img class="Hotimg" src="fire.png" alt="">
+                            <img class="Hotimg" src="fire.png" alt="">
+                            <img class="Hotimg" src="firegrey.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <p class="cardheader">5</p>
-                        <p class="cardtext">Process</p>
+                    <div class="hotDealsCard">
+                        <div class="cardkopf">
+                            <img src="https://cdn.jhmrad.com/wp-content/uploads/residential-building-designs_579516.jpg" alt="" class="imgprew">
+                        </div>
+
+                        <div class="border" id="scborder"></div>
+                        <p class="cardtext">8.24 €/m²</p>
+                        <p class="cardtext">Berlin</p>
+                        <p class="cardtext">Opportunity</p>
+                        <p class="cardtext">+9% yield</p>
+                        <div class="cardkopf">
+                            <p class="cardtext">Hot Score</p>
+                            <img class="Hotimg" src="fire.png" alt="">
+                            <img class="Hotimg" src="firegrey.png" alt="">
+                            <img class="Hotimg" src="firegrey.png" alt="">
+                        </div>
                     </div>
 
                     <div class="card">
@@ -55,125 +76,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="mySlides fade">
-                    <h1>Core/Core Plus</h1>
-                    <div class="info">
-                    <div class="card">
-                        <div class="cardkopf">
-                            <img src="https://i.ibb.co/ZfzMmNK/arrowupgreen.png" alt="" class="arrowimg" id="ccarrow">
-                            <p class="cardheader" id="cheader" onload="showElement()">59</p>
-                        </div>
 
-                        <div class="border" id="lcborder"></div>
-                        <p class="cardtext">Income</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Process</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Complete</p>
-                    </div>
-                </div>
-                </div>
-                <div class="mySlides fade">
-                    <h1>Value Added</h1>
-                    <div class="info">
-                    <div class="card">
-                        <div class="cardkopf">
-                            <img src="https://i.ibb.co/ZfzMmNK/arrowupgreen.png" alt="" class="arrowimg" id="vaarrow">
-                            <p class="cardheader" id="vaheader" onload="showElement()">123</p>
-                        </div>
-
-                        <div class="border" id="vaborder"></div>
-                        <p class="cardtext">Income</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Process</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Complete</p>
-                    </div>
-                </div>
-                </div>
-                <div class="mySlides fade">
-                    <h1>Opportunity</h1>
-                    <div class="info">
-                    <div class="card">
-                        <div class="cardkopf">
-                            <img src="https://i.ibb.co/ZfzMmNK/arrowupgreen.png" alt="" class="arrowimg" id="oarrow">
-                            <p class="cardheader" id="oheader" onload="showElement()">123</p>
-                        </div>
-
-                        <div class="border" id="oborder"></div>
-                        <p class="cardtext">Income</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Process</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Complete</p>
-                    </div>
-                </div>
-                </div>
-                <div class="mySlides fade">
-                    <h1>Development</h1>
-                    <div class="info">
-                    <div class="card">
-                        <div class="cardkopf">
-                            <img src="https://i.ibb.co/ZfzMmNK/arrowupgreen.png" alt="" class="arrowimg" id="darrow">
-                            <p class="cardheader" id="dheader" onload="showElement()">123</p>
-                        </div>
-
-                        <div class="border" id="dborder"></div>
-                        <p class="cardtext">Income</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Process</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Complete</p>
-                    </div>
-                </div>
-                </div>
-                <div class="mySlides fade">
-                    <h1>Workout</h1>
-                    <div class="info">
-                    <div class="card">
-                        <div class="cardkopf">
-                            <img src="https://i.ibb.co/ZfzMmNK/arrowupgreen.png" alt="" class="arrowimg" id="warrow">
-                            <p class="cardheader" id="wheader" onload="showElement()">123</p>
-                        </div>
-
-                        <div class="border" id="wborder"></div>
-                        <p class="cardtext">Income</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Process</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="cardheader">123</p>
-                        <p class="cardtext">Complete</p>
-                    </div>
-                </div>
                 </div>
 
             <div style="text-align:center">
@@ -191,35 +94,68 @@
                 <h3>YTD</h3>
                 <h1>31.11 Mrd €</h1>
             </div>
-            <div class="subheader">
-                <h3>Header</h3>
-                <h1>2.28 Mrd €</h1>
-            </div>
 
-            <div class="footercontent">
-                <h3>SuperCore</h3>
-                <h1>25.11 Mrd €</h1>
-            </div>
-            <div class="footercontent">
-                <h3>Core/Core Plus</h3>
-                <h1>11.11 Mrd €</h1>
-            </div>
-            <div class="footercontent">
-                <h3>Value Added</h3>
-                <h1>12.12 Mrd €</h1>
-            </div>
-            <div class="footercontent">
-                <h3>Opportunity</h3>
-                <h1>13.13 Mrd €</h1>
-            </div>
-            <div class="footercontent">
-                <h3>Development</h3>
-                <h1>14.14 Mrd €</h1>
-            </div>
-            <div class="footercontent">
-                <h3>Workout</h3>
-                <h1>15.15 Mrd €</h1>
-            </div>
+                <div class="footer-content">
+                    <div class="subheader">
+                        <h3>Header</h3>
+                        <h1>2.28 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>SuperCore</h3>
+                        <h1>25.11 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Core/Core Plus</h3>
+                        <h1>11.11 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Value Added</h3>
+                        <h1>12.12 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Opportunity</h3>
+                        <h1>13.13 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Development</h3>
+                        <h1>14.14 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Workout</h3>
+                        <h1>15.15 Mrd €</h1>
+                    </div>
+                </div>
+                <div class="footer-content" style="display: none" >
+                    <div class="subheader">
+                        <h3>new</h3>
+                        <h1>2.28 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>SuperCore</h3>
+                        <h1>25.11 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Core/Core Plus</h3>
+                        <h1>11.11 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Value Added</h3>
+                        <h1>12.12 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Opportunity</h3>
+                        <h1>13.13 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Development</h3>
+                        <h1>14.14 Mrd €</h1>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Workout</h3>
+                        <h1>15.15 Mrd €</h1>
+                    </div>
+                </div>
+
         </div>
     </div>
 </body>
