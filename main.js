@@ -114,3 +114,41 @@ function testfunc(){
     }
     footerautoslide()
 }
+
+let HTMLS = ['home.html', 'commercial.html', 'fonds.html']
+
+function automateWebsite(){
+    let i = HTMLS.indexOf(currentHTML())
+    if(i < HTMLS.length){
+        console.log(i)
+        i++
+        document.location.replace(HTMLS[i])
+    }
+
+    if(i == HTMLS.length){
+        i = 0
+        document.location.replace(HTMLS[i])
+    }
+
+
+}
+
+function currentHTML(){
+    let path = document.location.pathname
+    let strings = path.split('/')
+    return strings[strings.length-1]
+}
+
+function mytest(){
+    let getRightEls = HTMLS.indexOf(currentHTML())
+    console.log(getRightEls)
+    let test
+    if(getRightEls == 0){
+        test = document.getElementsByClassName('mySlidesHotDeal')
+    }
+    else{
+        test = document.getElementsByClassName('mySlides')
+    }
+    interval = test.length * 10000
+    setTimeout(automateWebsite, interval)
+}
