@@ -1,4 +1,19 @@
-html, body, h1, h3{
+/* Global Variables */
+
+:root {
+    --content-bg-color: rgba(0,0,0,0.3);
+
+    /*Font Weights*/
+    --header: 700;
+    --normal: 400;
+    --subheader: 600;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* HTML, Body */
+
+    html, body, h1, h3{
         margin: 0;
         padding: 0;
     }
@@ -15,6 +30,10 @@ html, body, h1, h3{
         left: 0;
     }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Navigation Bar */
+
     nav{
         grid-row: 1/2;
         grid-column: 2/4;
@@ -22,7 +41,7 @@ html, body, h1, h3{
         height: 5vh;
         /*width: 70vw;*/
         justify-content: space-between;
-        background-color: rgba(0,0,0,0.3);
+        background-color: var(--content-bg-color);
         /*margin-left: 30vw;*/
         border-radius: 15px 0 0 15px;
 
@@ -36,7 +55,7 @@ html, body, h1, h3{
         border: none;
         border-radius: 20px;
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: var(--normal);
         margin-bottom: .5vh;
         color: white;
     }
@@ -46,89 +65,13 @@ html, body, h1, h3{
     }
 
     .logo{
-        /*margin-top: .5vh;*/
+        margin-top: .5vh;
         margin-bottom: .5vh;
     }
 
-    .info{
-        display: flex;
-        justify-content: space-around;
-        /*margin-top: 40vh;*/
-    }
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
 
-    .card{
-        background-color: rgba(0,0,0,0.3);
-        color: white;
-        border-radius: 10px;
-        border: 2px solid white;
-        width: 20vw;
-        height: 20vh;
-        padding: 1vh 1vw;
-    }
-
-    .hotDealsCard{
-        background-color: rgba(0,0,0,0.3);
-        color: white;
-        border-radius: 10px;
-        border: 2px solid white;
-        width: 20vw;
-        height: 30vh;
-        padding: 1vh 1vw;
-        justify-content: center;
-    }
-
-    .hottext{
-        margin:.5vh 2vw 0 0;
-        font-weight: 700;
-        font-size: 1.5rem;
-    }
-
-    .imgprew{
-        height: 13vh;
-        width: 13vw;
-        margin-bottom: .5vh;
-    }
-
-    .Hotimg{
-        height: 4vh;
-        width: 4vh;
-    }
-
-    .cardkopf{
-        display: flex;
-    }
-
-    .arrowimg{
-        padding-top: 2vh;
-        height: 5vh;
-        width: 4vh;
-        opacity: 1;
-        animation-name: fadeIn;
-  	 	animation-duration: 5s;
-    }
-
-@keyframes fadeIn{
-  0% {opacity:0;}
-  100 {opacity:1;}
-}
-
-    .cardheader{
-        margin: 0 1vh;
-        font-weight: 700;
-        font-size: 4rem;
-    }
-
-    /*.border{*/
-    /*    width: 5vw;*/
-    /*    height: 1vh;*/
-    /*    background-color: red;*/
-    /*}*/
-
-    .cardtext{
-        margin: 0;
-        font-weight: 400;
-        font-size: 1.5rem;
-    }
+/* Content */
 
     .container{
         position: absolute;
@@ -146,6 +89,205 @@ html, body, h1, h3{
         color: white;
     }
 
+    .cardtext{
+        margin: 0;
+        font-weight: var(--normal);
+        font-size: 1.5rem;
+    }
+
+/* AC Card */
+
+    .card{
+        background-color: var(--content-bg-color);
+        color: white;
+        border-radius: 10px;
+        border: 2px solid white;
+        width: 20vw;
+        height: 20vh;
+        padding: 1vh 1vw;
+    }
+
+    .cardkopf{
+        display: flex;
+    }
+
+    .arrowimg{
+        padding-top: 2vh;
+        height: 5vh;
+        width: 4vh;
+        opacity: 1;
+        animation-name: fadeIn;
+  	 	animation-duration: 5s;
+    }
+
+    .Card1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 5vw;
+}
+
+    .Card2{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        margin-left: 5vw;
+    }
+
+    .Card3{
+        grid-row: 2/3;
+        grid-column: 3/4;
+        margin-left: 5vw;
+    }
+
+    .cardheader{
+        margin: 0 1vh;
+        font-weight: var(--header);
+        font-size: 4rem;
+    }
+
+/* Sliders */
+
+    .slideshow-container {
+            display: grid;
+            grid-row: 2/4;
+            grid-column: 1/-1;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 33vw 33vw 33vw;
+            align-content: center;
+        }
+
+    .mySlides {
+            display: none;
+            grid-row: 2/4;
+            grid-column: 1/-1;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 33vw 33vw 33vw;
+            align-content: center;
+        }
+
+    .mySlides > h1 {
+            color: white;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            text-align: center;
+            padding-top: 30vh;
+        }
+    /*.border{*/
+    /*    width: 5vw;*/
+    /*    height: 1vh;*/
+    /*    background-color: red;*/
+    /*}*/
+
+/* Hot Deals Card */
+
+        .hotDealsCard{
+            background-color: var(--content-bg-color);
+            color: white;
+            border-radius: 10px;
+            border: 2px solid white;
+            width: 20vw;
+            height: 30vh;
+            padding: 1vh 1vw;
+            justify-content: center;
+        }
+
+        .hottext{
+            margin:.5vh 2vw 0 0;
+            font-weight: var(--header);
+            font-size: 1.5rem;
+        }
+
+        .imgprew{
+            height: 13vh;
+            width: 13vw;
+            margin-bottom: .5vh;
+        }
+
+        .Hotimg{
+            height: 4vh;
+            width: 4vh;
+        }
+
+        .hdheader{
+        color: white;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        text-align: center;
+        padding-top: 30vh;
+    }
+
+        .hotDealsCard1{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            margin-left: 5vw;
+        }
+
+        .hotDealsCard2{
+            grid-row: 2/3;
+            grid-column: 2/3;
+            margin-left: 5vw;
+        }
+
+        .hotDealsCard3{
+            grid-row: 2/3;
+            grid-column: 3/4;
+            margin-left: 5vw;
+        }
+
+/* Hot Sliders */
+
+        .mySlidesHotDeal {
+            display: none;
+            grid-row: 2/4;
+            grid-column: 1/-1;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 33vw 33vw 33vw;
+            align-content: center;
+        }
+
+        .mySlidesHotDeal > h1{
+            color: white;
+            text-align: center;
+            /*margin-top: 30vh;*/
+            font-size: 3rem;
+            font-weight: var(--header);
+        }
+
+        .mySlidesHotDeal > h3{
+            color: white;
+            text-align: center;
+            /*margin-top: 2vh;*/
+            /*margin-bottom: 2vh;*/
+            font-size: 3rem;
+            font-weight: var(--header);
+        }
+
+
+/* Dots for Sliders */
+
+        .dots{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          /*margin: 5vh .2vw;*/
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover, dot:focus {
+          background-color: #717171;
+        }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Footer Bar */
+
     .footer{
         position: fixed;
         display: flex;
@@ -154,7 +296,7 @@ html, body, h1, h3{
         width: 100vw;
         color: white;
         height: 7.5vh;
-        background-color: rgba(255,255,255,0.3);
+        background-color: var(--content-bg-color);
         border-top: 2px solid white;
         overflow: hidden;
     }
@@ -178,13 +320,13 @@ html, body, h1, h3{
 
     .header > h3, .subheader > h3, .footer-item > h3{
         font-size: 1.25rem;
-        font-weight: 400;
+        font-weight: var(--normal);
     }
 
     .header > h1, .subheader > h1, .footer-item > h1{
         padding-top: .5vh;
         font-size: 1.5rem;
-        font-weight: 700;
+        font-weight: var(--header);
     }
 
     .subheader{
@@ -196,7 +338,7 @@ html, body, h1, h3{
         background-color: #859FAF;
         border-radius: 0 20px 20px 0;
         padding-left: 2.5vw;
-        font-weight: 300;
+        font-weight: var(--subheader);
         z-index: 1;
     }
 
@@ -207,173 +349,48 @@ html, body, h1, h3{
         margin-left: 10vw;
         min-width: 20vw;
         height: 6.5vh;
-        left: 50vw;
+        left: 120vw;
         z-index: 0;
         overflow: hidden;
     }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Animations */
+
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
     @keyframes footerslide {
-        from {left:120vw;}
-        to {left: -100vw;}
+            from {left:120vw;}
+            to {left: -100vw;}
+        }
+
+    @-webkit-keyframes fade {
+      from {opacity: 0}
+      to {opacity: 1}
     }
 
-
-    .headers{
-        width: 100vw;
-        overflow: hidden;
+    @keyframes fade {
+      from {opacity: 0}
+      to {opacity: 1}
     }
 
-    .slideshow-container {
-      display: grid;
-    grid-row: 2/4;
-    grid-column: 1/-1;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 33vw 33vw 33vw;
-    align-content: center;
-}
+    @keyframes fadeOut {
+      from {opacity: 1}
+      to {opacity: 0}
+    }
 
-/* Hide the images by default */
-.mySlides {
-    display: none;
-    grid-row: 2/4;
-    grid-column: 1/-1;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 33vw 33vw 33vw;
-    align-content: center;
-}
+    @-webkit-keyframes fadeOut {
+      from {opacity: 1}
+      to {opacity: 0}
+    }
 
-.mySlidesHotDeal {
-    display: none;
-    grid-row: 2/4;
-    grid-column: 1/-1;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 33vw 33vw 33vw;
-    align-content: center;
-}
-
-.mySlides > h1 {
-    color: white;
-    grid-row: 1/2;
-    grid-column: 2/3;
-    text-align: center;
-    padding-top: 30vh;
-}
-
-.hdheader{
-    color: white;
-    grid-row: 1/2;
-    grid-column: 2/3;
-    text-align: center;
-    padding-top: 30vh;
-}
-
-.hotDealsCard1{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-left: 5vw;
-}
-
-.hotDealsCard2{
-    grid-row: 2/3;
-    grid-column: 2/3;
-    margin-left: 5vw;
-}
-
-.hotDealsCard3{
-    grid-row: 2/3;
-    grid-column: 3/4;
-    margin-left: 5vw;
-}
-
-.Card1{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-left: 5vw;
-}
-
-.Card2{
-    grid-row: 2/3;
-    grid-column: 2/3;
-    margin-left: 5vw;
-}
-
-.Card3{
-    grid-row: 2/3;
-    grid-column: 3/4;
-    margin-left: 5vw;
-}
-
-.mySlidesHotDeal > h1{
-    color: white;
-    text-align: center;
-    /*margin-top: 30vh;*/
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.mySlidesHotDeal > h3{
-    color: white;
-    text-align: center;
-    /*margin-top: 2vh;*/
-    /*margin-bottom: 2vh;*/
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.mySlides > h1{
-    color: white;
-    text-align: center;
-    /*margin-top: 30vh;*/
-    /*margin-bottom: 10vh;*/
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.dots{
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  /*margin: 5vh .2vw;*/
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover, dot:focus {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-@keyframes fadeOut {
-  from {opacity: 1}
-  to {opacity: 0}
-}
-
-@-webkit-keyframes fadeOut {
-  from {opacity: 1}
-  to {opacity: 0}
-}
+    @keyframes fadeIn{
+      0% {opacity:0;}
+      100% {opacity:1;}
+    }
