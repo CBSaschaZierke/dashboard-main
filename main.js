@@ -152,3 +152,27 @@ function mytest(){
     interval = test.length * 10000
     setTimeout(automateWebsite, interval)
 }
+
+color = '#bfab60'
+
+let tditemindex = 0
+function germanselect(){
+    let i;
+    let item = document.getElementsByClassName("tditem");
+    let karte = document.getElementById('deutschlandkarte')
+    for (i = 0; i < item.length; i++) {
+        item[i].style.color = '#fff'
+        item[i].style.fontWeight = 400
+        item[i].style.opacity = 0.3;
+        item[i].firstElementChild.style.borderLeft = ''
+    }
+    tditemindex++;
+    if (tditemindex > item.length) {tditemindex = 1}
+    item[tditemindex-1].style.opacity = 1;
+    item[tditemindex-1].firstElementChild.style.borderLeft = '2px solid #bfab60'
+    item[tditemindex-1].style.color = '#bfab60'
+    item[tditemindex-1].style.fontWeight = 700
+    karte.src = `./DE/df${item[tditemindex-1].firstElementChild.innerHTML}.png`
+    // item[tditemindex-1].style.borderLeft = '1px solid #bfab60'
+    setTimeout(germanselect, 5000);
+}
