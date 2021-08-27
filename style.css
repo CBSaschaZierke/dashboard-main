@@ -59,7 +59,7 @@
         border: none;
         border-radius: 20px;
         /*font-size: 2rem;*/
-        font-size: 100%;
+        font-size: 1.25rem;
         font-weight: var(--normal);
         color: white;
     }
@@ -428,4 +428,23 @@
     @keyframes fadeIn{
       0% {opacity:0;}
       100% {opacity:1;}
+    }
+
+
+    @media screen and (max-width: 1450px){
+        .navbtn{
+            font-size: 1rem;
+        }
+
+        .header > h3, .subheader > h3, .footer-item > h3{
+            font-size: 1rem;
+        }
+
+        .header > h1, .subheader > h1, .footer-item > h1{
+            font-size: .8rem;
+        }
+
+        .mySlidesHotDeal, .cardtext{
+            font-size: .75rem;
+        }
     }
