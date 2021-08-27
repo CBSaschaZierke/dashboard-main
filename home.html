@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
-<body onload="autoShowSlidesHD(), footerautoslide(), germanselect()">  <!--, mytest()-->
+<body onload="autoShowSlidesHD(), footerautoslide(), testSelect()">  <!--, mytest()-->
 <video muted autoplay loop>
     <source src="video.mp4" type="video/mp4">
 </video>
@@ -149,59 +149,9 @@
                         <h1>Germany</h1>
                         <h3>Overview</h3>
                     </div>
-                    <div class="hotDealsCard1 hotDealsCard">
-                        <div style="display: none" class="cardkopf">
-                            <img class="deutschlandkarte" src="def8.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Anzahl</th>
-                                    <th>Val</th>
-                                </tr>
-                                <tr >
-                                    <td style="border-left: 2px solid #4ce5c4; border-bottom: 2px solid #4ce5c4;">Berlin</td>
-                                    <td>100</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr>
-                                    <td style="border-left: 2px solid #e5ad4c; border-bottom: 2px solid #e5ad4c;">Hamburg</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr>
-                                    <td style="border-left: 2px solid #dde113; border-bottom: 2px solid #dde113;">Bremen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr>
-                                    <td style="border-left: 2px solid #be6f8d; border-bottom: 2px solid #be6f8d;">Mecklenburg-Vorpommern</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr>
-                                    <td style="border-left: 2px solid #c564b7; border-bottom: 2px solid #c564b7;">Schleswig-Holstein</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr>
-                                    <td style="border-left: 2px solid #56bdd6; border-bottom: 2px solid #56bdd6;">Niedersachen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr>
-                                    <td style="border-left: 2px solid #ccbc6d; border-bottom: 2px solid #ccbc6d;">Brandenburg</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr>
-                                    <td style="border-left: 2px solid #a3d656; border-bottom: 2px solid #a3d656;">Sachsen-Anhalt</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                            </table>
-                        </div>
+                    <div id="hotDealsCard1" class="hotDealsCard1 hotDealsCard">
                         <div class="cardkopf">
-                            <img id="deutschlandkarte" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
+                            <img id="deutschlandkarte1" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
                             <table>
                                 <tr>
                                     <th>Bundesland</th>
@@ -252,15 +202,274 @@
                         </div>
                     </div>
 
-                    <div class="hotDealsCard2 hotDealsCard">
+                    <div id="hotDealsCard2" class="hotDealsCard2 hotDealsCard">
                         <div class="cardkopf">
-                            <img class="deutschlandkarte" src="def8.png" alt="">
+                            <img id="deutschlandkarte2" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
+                            <table>
+                                <tr>
+                                    <th>Bundesland</th>
+                                    <th>Anzahl</th>
+                                    <th>Val</th>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Sachsen</td>
+                                    <td>100</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Nordrhein-Westfahlen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Hessen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Thüringen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Bayern</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Baden-Württemberg</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Rheinland-Pfalz</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Saarland</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
 
-                    <div class="hotDealsCard3 hotDealsCard">
+                    <div id="hotDealsCard3" class="hotDealsCard3 hotDealsCard">
                         <div class="cardkopf">
-                            <img class="deutschlandkarte" src="def8.png" alt="">
+                            <img id="deutschlandkarte3" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
+                            <table>
+                                <tr>
+                                    <th>Bundesland</th>
+                                    <th>Anzahl</th>
+                                    <th>Val</th>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Sachsen</td>
+                                    <td>100</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Nordrhein-Westfahlen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Hessen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Thüringen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Bayern</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Baden-Württemberg</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Rheinland-Pfalz</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Saarland</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlidesHotDeal fade">
+                    <div class="hdheader">
+                        <h1>Test</h1>
+                        <h3>Test</h3>
+                    </div>
+                    <div id="hotDealsCard4" class="hotDealsCard1 hotDealsCard">
+                        <div class="cardkopf">
+                            <img id="deutschlandkarte4" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
+                            <table>
+                                <tr>
+                                    <th>Bundesland</th>
+                                    <th>Anzahl</th>
+                                    <th>Val</th>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Berlin</td>
+                                    <td>100</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Berlin</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Berlin</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Berlin</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Berlin</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Berlin</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Berlin</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Berlin</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="hotDealsCard5" class="hotDealsCard2 hotDealsCard">
+                        <div class="cardkopf">
+                            <img id="deutschlandkarte5" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
+                            <table>
+                                <tr>
+                                    <th>Bundesland</th>
+                                    <th>Anzahl</th>
+                                    <th>Val</th>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Sachsen</td>
+                                    <td>100</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Nordrhein-Westfahlen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Hessen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Thüringen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Bayern</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Baden-Württemberg</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Rheinland-Pfalz</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Saarland</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="hotDealsCard6" class="hotDealsCard3 hotDealsCard">
+                        <div class="cardkopf">
+                            <img id="deutschlandkarte6" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
+                            <table>
+                                <tr>
+                                    <th>Bundesland</th>
+                                    <th>Anzahl</th>
+                                    <th>Val</th>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Sachsen</td>
+                                    <td>100</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Nordrhein-Westfahlen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Hessen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Thüringen</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Bayern</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Baden-Württemberg</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Rheinland-Pfalz</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                                <tr class="tditem">
+                                    <td>Saarland</td>
+                                    <td>86</td>
+                                    <td>val</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>

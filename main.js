@@ -141,7 +141,6 @@ function currentHTML(){
 
 function mytest(){
     let getRightEls = HTMLS.indexOf(currentHTML())
-    console.log(getRightEls)
     let test
     if(getRightEls == 0){
         test = document.getElementsByClassName('mySlidesHotDeal')
@@ -175,4 +174,74 @@ function germanselect(){
     karte.src = `./DE/df${item[tditemindex-1].firstElementChild.innerHTML}.png`
     // item[tditemindex-1].style.borderLeft = '1px solid #bfab60'
     setTimeout(germanselect, 5000);
+}
+
+
+let testindex = 0
+let testindex2 = 0
+function testSelect(){
+    let i;
+    let karte
+    let slider = document.getElementsByClassName('mySlidesHotDeal')
+    let itemtest
+    let h
+    if(slider[0].style.display == 'grid'){
+        for(let j = 1; j < 4;j++){
+                let test = document.getElementById(`hotDealsCard${j}`)
+                itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
+
+
+                        for(h = 0; h < itemtest.length; h++){
+                        itemtest[h].style.color = '#fff'
+                        itemtest[h].style.fontWeight = 400
+                        itemtest[h].style.opacity = 0.3;
+                        itemtest[h].firstElementChild.style.borderLeft = ''
+                    }
+                }
+               testindex++;
+        }
+    else {
+        for(let j = 4; j < 7;j++){
+                let test = document.getElementById(`hotDealsCard${j}`)
+                itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
+
+
+                        for(h = 0; h < itemtest.length; h++){
+                        itemtest[h].style.color = '#fff'
+                        itemtest[h].style.fontWeight = 400
+                        itemtest[h].style.opacity = 0.3;
+                        itemtest[h].firstElementChild.style.borderLeft = ''
+                    }
+                }
+            testindex2++;
+        }
+
+    if(testindex > itemtest.length){testindex = 1}
+    if(testindex2 > itemtest.length){testindex2 = 1}
+    if(slider[0].style.display == 'grid') {
+        for (let j = 1; j < 4; j++) {
+            itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
+            karte = document.getElementById(`deutschlandkarte${j}`)
+
+            itemtest[testindex - 1].style.opacity = 1;
+            itemtest[testindex - 1].firstElementChild.style.borderLeft = '2px solid #bfab60'
+            itemtest[testindex - 1].style.color = '#bfab60'
+            itemtest[testindex - 1].style.fontWeight = 700
+
+            karte.src = `./DE/df${itemtest[testindex-1].firstElementChild.innerHTML}.png`
+        }
+    }
+    else {
+        for (let j = 4; j < 7; j++) {
+            itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
+            karte = document.getElementById(`deutschlandkarte${j}`)
+
+            itemtest[testindex2-1].style.opacity = 1;
+            itemtest[testindex2-1].firstElementChild.style.borderLeft = '2px solid #bfab60'
+            itemtest[testindex2-1].style.color = '#bfab60'
+            itemtest[testindex2-1].style.fontWeight = 700
+            karte.src = `./DE/df${itemtest[testindex2-1].firstElementChild.innerHTML}.png`
+        }
+    }
+    setTimeout(testSelect, 5000);
 }
