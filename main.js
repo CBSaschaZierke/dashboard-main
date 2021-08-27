@@ -89,7 +89,7 @@ function showSlidesHD(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideHDIndex-1].style.display = "block";
+  slides[slideHDIndex-1].style.display = "grid";
   dots[slideHDIndex-1].className += " active";
 }
 
