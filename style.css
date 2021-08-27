@@ -218,12 +218,36 @@
         }
 
         .hdheader{
-        color: white;
-        grid-row: 1/2;
-        grid-column: 2/3;
-        text-align: center;
-        padding-top: 40%;
-    }
+            color: white;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            text-align: center;
+            padding-top: 40%;
+        }
+
+        .leftheader{
+            color: white;
+            grid-row: 1/2;
+            grid-column: 1/2;
+            text-align: center;
+            padding-top: 55%;
+        }
+
+        .middleheader{
+            color: white;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            text-align: center;
+            padding-top: 55%;
+        }
+
+        .rightheader{
+            color: white;
+            grid-row: 1/2;
+            grid-column: 3/4;
+            text-align: center;
+            padding-top: 55%;
+        }
 
         .hotDealsCard1{
             grid-column: 1/2;
@@ -267,7 +291,7 @@
             text-align: center;
             /*margin-top: 2vh;*/
             /*margin-bottom: 2vh;*/
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: var(--header);
         }
 

@@ -179,6 +179,8 @@ function germanselect(){
 
 let testindex = 0
 let testindex2 = 0
+let testindex3 = 0
+let testindex4 = 0
 function testSelect(){
     let i;
     let karte
@@ -200,7 +202,7 @@ function testSelect(){
                 }
                testindex++;
         }
-    else {
+    else if (slider[1].style.display == 'grid') {
         for(let j = 4; j < 7;j++){
                 let test = document.getElementById(`hotDealsCard${j}`)
                 itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
@@ -215,9 +217,41 @@ function testSelect(){
                 }
             testindex2++;
         }
+        else if (slider[2].style.display == 'grid') {
+        for(let j = 7; j < 10;j++){
+                let test = document.getElementById(`hotDealsCard${j}`)
+                itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
+
+
+                        for(h = 0; h < itemtest.length; h++){
+                        itemtest[h].style.color = '#fff'
+                        itemtest[h].style.fontWeight = 400
+                        itemtest[h].style.opacity = 0.3;
+                        itemtest[h].firstElementChild.style.borderLeft = ''
+                    }
+                }
+            testindex3++;
+        }
+        else if (slider[3].style.display == 'grid') {
+        for(let j = 10; j < 13;j++){
+                let test = document.getElementById(`hotDealsCard${j}`)
+                itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
+
+
+                        for(h = 0; h < itemtest.length; h++){
+                        itemtest[h].style.color = '#fff'
+                        itemtest[h].style.fontWeight = 400
+                        itemtest[h].style.opacity = 0.3;
+                        itemtest[h].firstElementChild.style.borderLeft = ''
+                    }
+                }
+            testindex4++;
+        }
 
     if(testindex > itemtest.length){testindex = 1}
     if(testindex2 > itemtest.length){testindex2 = 1}
+    if(testindex3 > itemtest.length){testindex3 = 1}
+    if(testindex4 > itemtest.length){testindex4 = 1}
     if(slider[0].style.display == 'grid') {
         for (let j = 1; j < 4; j++) {
             itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
@@ -231,8 +265,32 @@ function testSelect(){
             karte.src = `./DE/df${itemtest[testindex-1].firstElementChild.innerHTML}.png`
         }
     }
-    else {
+    else if (slider[1].style.display == 'grid') {
         for (let j = 4; j < 7; j++) {
+            itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
+            karte = document.getElementById(`deutschlandkarte${j}`)
+
+            itemtest[testindex2-1].style.opacity = 1;
+            itemtest[testindex2-1].firstElementChild.style.borderLeft = '2px solid #bfab60'
+            itemtest[testindex2-1].style.color = '#bfab60'
+            itemtest[testindex2-1].style.fontWeight = 700
+            karte.src = `./DE/df${itemtest[testindex2-1].firstElementChild.innerHTML}.png`
+        }
+    }
+    else if (slider[2].style.display == 'grid') {
+        for (let j = 7; j < 10; j++) {
+            itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
+            karte = document.getElementById(`deutschlandkarte${j}`)
+
+            itemtest[testindex2-1].style.opacity = 1;
+            itemtest[testindex2-1].firstElementChild.style.borderLeft = '2px solid #bfab60'
+            itemtest[testindex2-1].style.color = '#bfab60'
+            itemtest[testindex2-1].style.fontWeight = 700
+            karte.src = `./DE/df${itemtest[testindex2-1].firstElementChild.innerHTML}.png`
+        }
+    }
+    else if (slider[3].style.display == 'grid') {
+        for (let j = 10; j < 13; j++) {
             itemtest = document.getElementById(`hotDealsCard${j}`).getElementsByClassName("tditem")
             karte = document.getElementById(`deutschlandkarte${j}`)
 
