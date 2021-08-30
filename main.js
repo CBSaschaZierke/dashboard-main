@@ -115,7 +115,7 @@ function testfunc(){
     footerautoslide()
 }
 
-let HTMLS = ['home.html', 'commercial.html', 'fonds.html']
+let HTMLS = ['home.html', 'commercial.html', 'residential.html', 'healthcare.html', 'fonds.html']
 
 function automateWebsite(){
     let i = HTMLS.indexOf(currentHTML())
