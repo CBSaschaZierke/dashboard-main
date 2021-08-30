@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
-<body onload="autoShowSlidesHD(), testSelect(), footerautoslide(), mytest()">  <!-- -->
+<body onload="newSelect()">  <!-- autoShowSlidesHD(), mytest() testSelect(),-->
 <video muted autoplay loop>
     <source src="video.mp4" type="video/mp4">
 </video>
@@ -23,632 +23,555 @@
         <img src="Bild3.png" alt="CapitalBay Logo" class="logo">
     </nav>
 
-                <div class="mySlidesHotDeal fade">
+                <div class="mySlidesHotDeal fade" style="display: grid">
+                    <img id="deutschlandkarte1" class="testimg"  src="./DE/dfBlank.png" alt="">
+
                     <div class="hdheader">
                         <h1>Germany</h1>
-                        <h3>YTD</h3>
+                        <h3>31.11 Mrd €</h3>
+                        <h3>200</h3>
                     </div>
                     <h3 class="leftheader">Processed</h3>
                     <h3 class="middleheader">In Process</h3>
                     <h3 class="rightheader">Closed</h3>
-                    <div id="hotDealsCard1" class="hotDealsCard1 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte1" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
+                    <div id="hotDealsCard1" class="hotDealsCard1 hotDealsCard testcard">
+<!--                        <div class="cardkopf">-->
+                            <h1>Germany</h1>
+                            <table class="tg">
                                 <tr>
-                                    <th>Bundesland</th>
+                                    <th>Volumen</th>
                                     <th>Anzahl</th>
-                                    <th>Val</th>
                                 </tr>
                                 <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>100</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>86</td>
-                                    <td>val</td>
+                                    <td>31.11 Mrd € (100%)</td>
+                                    <td>200 (100%)</td>
                                 </tr>
                             </table>
-                        </div>
+                        <h1 id="bltheader">Sachsen</h1>
+                        <table class="tb">
+                            <tr>
+                                    <th class="vtest">Volumen</th>
+                                    <th class="atest">Anzahl</th>
+                                </tr>
+                            <tr class="bltitem">
+                                    <td id="bltitem1">10.12 Mrd € (10%)</td>
+                                    <td id="bltitem2">20 (10%)</td>
+                                </tr>
+                        </table>
+<!--                        </div>-->
                     </div>
 
-                    <div id="hotDealsCard2" class="hotDealsCard2 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte2" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
+                    <div id="hotDealsCard2" class="hotDealsCard2 hotDealsCard testcard">
+                         <h1>Germany</h1>
+                            <table class="tg">
                                 <tr>
-                                    <th>Bundesland</th>
+                                    <th>Volumen</th>
                                     <th>Anzahl</th>
-                                    <th>Val</th>
                                 </tr>
                                 <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>100</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>86</td>
-                                    <td>val</td>
+                                    <td>31.11 Mrd € (100%)</td>
+                                    <td>200 (100%)</td>
                                 </tr>
                             </table>
-                        </div>
+                        <h1 id="bltheader2">Sachsen</h1>
+                        <table class="tb">
+                            <tr>
+                                    <th class="vtest">Volumen</th>
+                                    <th class="atest">Anzahl</th>
+                                </tr>
+                            <tr class="bltitem">
+                                    <td id="bltitem3">10.12 Mrd € (10%)</td>
+                                    <td id="bltitem4">20 (10%)</td>
+                                </tr>
+                        </table>
+<!--                        </div>-->
                     </div>
 
-                    <div id="hotDealsCard3" class="hotDealsCard3 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte3" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
+                    <div id="hotDealsCard3" class="hotDealsCard3 hotDealsCard testcard">
+                         <h1>Germany</h1>
+                            <table class="tg">
                                 <tr>
-                                    <th>Bundesland</th>
+                                    <th>Volumen</th>
                                     <th>Anzahl</th>
-                                    <th>Val</th>
                                 </tr>
                                 <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>100</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>86</td>
-                                    <td>val</td>
+                                    <td>31.11 Mrd € (100%)</td>
+                                    <td>200 (100%)</td>
                                 </tr>
                             </table>
-                        </div>
+                        <h1 id="bltheader3">Sachsen</h1>
+                        <table class="tb">
+                            <tr>
+                                    <th>Volumen</th>
+                                    <th>Anzahl</th>
+                                </tr>
+                            <tr class="bltitem">
+                                    <td id="bltitem5">10.12 Mrd € (10%)</td>
+                                    <td id="bltitem6">20 (10%)</td>
+                                </tr>
+                        </table>
+<!--                        </div>-->
                     </div>
                 </div>
 
-                <div class="mySlidesHotDeal fade">
-                    <div class="hdheader">
-                        <h1>Germany</h1>
-                        <h3>YTD</h3>
-                    </div>
-                    <h3 class="leftheader">Processed</h3>
-                    <h3 class="middleheader">In Process</h3>
-                    <h3 class="rightheader">Closed</h3>
-                    <div id="hotDealsCard4" class="hotDealsCard1 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte4" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Anzahl</th>
-                                    <th>Val</th>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Berlin</td>
-                                    <td>100</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Berlin</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Berlin</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Berlin</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Berlin</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Berlin</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Berlin</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Berlin</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+<!--                <div class="mySlidesHotDeal fade">-->
+<!--                    <div class="hdheader">-->
+<!--                        <h1>Germany</h1>-->
+<!--                        <h3>YTD</h3>-->
+<!--                    </div>-->
+<!--                    <h3 class="leftheader">Processed</h3>-->
+<!--                    <h3 class="middleheader">In Process</h3>-->
+<!--                    <h3 class="rightheader">Closed</h3>-->
+<!--                    <div id="hotDealsCard4" class="hotDealsCard1 hotDealsCard">-->
+<!--                        <div class="cardkopf">-->
+<!--                            <img id="deutschlandkarte4" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">-->
+<!--                            <table>-->
+<!--                                <tr>-->
+<!--                                    <th>Bundesland</th>-->
+<!--                                    <th>Anzahl</th>-->
+<!--                                    <th>Val</th>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Berlin</td>-->
+<!--                                    <td>100</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Berlin</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Berlin</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Berlin</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Berlin</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Berlin</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Berlin</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Berlin</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-                    <div id="hotDealsCard5" class="hotDealsCard2 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte5" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Anzahl</th>
-                                    <th>Val</th>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>100</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+<!--                    <div id="hotDealsCard5" class="hotDealsCard2 hotDealsCard">-->
+<!--                        <div class="cardkopf">-->
+<!--                            <img id="deutschlandkarte5" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">-->
+<!--                            <table>-->
+<!--                                <tr>-->
+<!--                                    <th>Bundesland</th>-->
+<!--                                    <th>Anzahl</th>-->
+<!--                                    <th>Val</th>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Sachsen</td>-->
+<!--                                    <td>100</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Nordrhein-Westfahlen</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Hessen</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Thüringen</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Bayern</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Baden-Württemberg</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Rheinland-Pfalz</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Saarland</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-                    <div id="hotDealsCard6" class="hotDealsCard3 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte6" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Anzahl</th>
-                                    <th>Val</th>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>100</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>86</td>
-                                    <td>val</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-
-        <div class="mySlidesHotDeal fade">
-                    <div class="hdheader">
-                        <h1>Germany</h1>
-                        <h3>Volume</h3>
-                    </div>
-                    <h3 class="leftheader">Processed</h3>
-                    <h3 class="middleheader">In Process</h3>
-                    <h3 class="rightheader">Closed</h3>
-                    <div id="hotDealsCard7" class="hotDealsCard1 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte7" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Volume(Mrd)</th>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>123.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div id="hotDealsCard8" class="hotDealsCard2 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte8" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Volume(Mrd)</th>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div id="hotDealsCard9" class="hotDealsCard3 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte9" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Volume(Mrd)</th>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-        <div class="mySlidesHotDeal fade">
-                    <div class="hdheader">
-                        <h1>Germany</h1>
-                        <h3>Volume</h3>
-                    </div>
-                    <h3 class="leftheader">Processed</h3>
-                    <h3 class="middleheader">In Process</h3>
-                    <h3 class="rightheader">Closed</h3>
-                    <div id="hotDealsCard10" class="hotDealsCard1 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte10" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Volume(Mrd)</th>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div id="hotDealsCard11" class="hotDealsCard2 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte11" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Volume(Mrd)</th>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div id="hotDealsCard12" class="hotDealsCard3 hotDealsCard">
-                        <div class="cardkopf">
-                            <img id="deutschlandkarte12" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">
-                            <table>
-                                <tr>
-                                    <th>Bundesland</th>
-                                    <th>Volume(Mrd)</th>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Sachsen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Nordrhein-Westfahlen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Hessen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Thüringen</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Bayern</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Baden-Württemberg</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Rheinland-Pfalz</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                                <tr class="tditem">
-                                    <td>Saarland</td>
-                                    <td>31.7 Mrd €</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+<!--                    <div id="hotDealsCard6" class="hotDealsCard3 hotDealsCard">-->
+<!--                        <div class="cardkopf">-->
+<!--                            <img id="deutschlandkarte6" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">-->
+<!--                            <table>-->
+<!--                                <tr>-->
+<!--                                    <th>Bundesland</th>-->
+<!--                                    <th>Anzahl</th>-->
+<!--                                    <th>Val</th>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Sachsen</td>-->
+<!--                                    <td>100</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Nordrhein-Westfahlen</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Hessen</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Thüringen</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Bayern</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Baden-Württemberg</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Rheinland-Pfalz</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Saarland</td>-->
+<!--                                    <td>86</td>-->
+<!--                                    <td>val</td>-->
+<!--                                </tr>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
 
-                <div class="dots" style="text-align:center">
-                  <span class="dot" onclick="currentSlideHD(1)"></span>
-                  <span class="dot" onclick="currentSlideHD(2)"></span>
-                    <span class="dot" onclick="currentSlideHD(3)"></span>
-                    <span class="dot" onclick="currentSlideHD(4)"></span>
-                </div>
+<!--        <div class="mySlidesHotDeal fade">-->
+<!--                    <div class="hdheader">-->
+<!--                        <h1>Germany</h1>-->
+<!--                        <h3>Volume</h3>-->
+<!--                    </div>-->
+<!--                    <h3 class="leftheader">Processed</h3>-->
+<!--                    <h3 class="middleheader">In Process</h3>-->
+<!--                    <h3 class="rightheader">Closed</h3>-->
+<!--                    <div id="hotDealsCard7" class="hotDealsCard1 hotDealsCard">-->
+<!--                        <div class="cardkopf">-->
+<!--                            <img id="deutschlandkarte7" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">-->
+<!--                            <table>-->
+<!--                                <tr>-->
+<!--                                    <th>Bundesland</th>-->
+<!--                                    <th>Volume(Mrd)</th>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Sachsen</td>-->
+<!--                                    <td>123.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Nordrhein-Westfahlen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Hessen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Thüringen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Bayern</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Baden-Württemberg</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Rheinland-Pfalz</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Saarland</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div id="hotDealsCard8" class="hotDealsCard2 hotDealsCard">-->
+<!--                        <div class="cardkopf">-->
+<!--                            <img id="deutschlandkarte8" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">-->
+<!--                            <table>-->
+<!--                                <tr>-->
+<!--                                    <th>Bundesland</th>-->
+<!--                                    <th>Volume(Mrd)</th>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Sachsen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Nordrhein-Westfahlen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Hessen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Thüringen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Bayern</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Baden-Württemberg</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Rheinland-Pfalz</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Saarland</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div id="hotDealsCard9" class="hotDealsCard3 hotDealsCard">-->
+<!--                        <div class="cardkopf">-->
+<!--                            <img id="deutschlandkarte9" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">-->
+<!--                            <table>-->
+<!--                                <tr>-->
+<!--                                    <th>Bundesland</th>-->
+<!--                                    <th>Volume(Mrd)</th>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Sachsen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Nordrhein-Westfahlen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Hessen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Thüringen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Bayern</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Baden-Württemberg</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Rheinland-Pfalz</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Saarland</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--        <div class="mySlidesHotDeal fade">-->
+<!--                    <div class="hdheader">-->
+<!--                        <h1>Germany</h1>-->
+<!--                        <h3>Volume</h3>-->
+<!--                    </div>-->
+<!--                    <h3 class="leftheader">Processed</h3>-->
+<!--                    <h3 class="middleheader">In Process</h3>-->
+<!--                    <h3 class="rightheader">Closed</h3>-->
+<!--                    <div id="hotDealsCard10" class="hotDealsCard1 hotDealsCard">-->
+<!--                        <div class="cardkopf">-->
+<!--                            <img id="deutschlandkarte10" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">-->
+<!--                            <table>-->
+<!--                                <tr>-->
+<!--                                    <th>Bundesland</th>-->
+<!--                                    <th>Volume(Mrd)</th>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Sachsen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Nordrhein-Westfahlen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Hessen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Thüringen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Bayern</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Baden-Württemberg</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Rheinland-Pfalz</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Saarland</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div id="hotDealsCard11" class="hotDealsCard2 hotDealsCard">-->
+<!--                        <div class="cardkopf">-->
+<!--                            <img id="deutschlandkarte11" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">-->
+<!--                            <table>-->
+<!--                                <tr>-->
+<!--                                    <th>Bundesland</th>-->
+<!--                                    <th>Volume(Mrd)</th>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Sachsen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Nordrhein-Westfahlen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Hessen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Thüringen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Bayern</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Baden-Württemberg</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Rheinland-Pfalz</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Saarland</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div id="hotDealsCard12" class="hotDealsCard3 hotDealsCard">-->
+<!--                        <div class="cardkopf">-->
+<!--                            <img id="deutschlandkarte12" class="deutschlandkarte" src="./DE/dfBlank.png" alt="">-->
+<!--                            <table>-->
+<!--                                <tr>-->
+<!--                                    <th>Bundesland</th>-->
+<!--                                    <th>Volume(Mrd)</th>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Sachsen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Nordrhein-Westfahlen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Hessen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Thüringen</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Bayern</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Baden-Württemberg</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Rheinland-Pfalz</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                                <tr class="tditem">-->
+<!--                                    <td>Saarland</td>-->
+<!--                                    <td>31.7 Mrd €</td>-->
+<!--                                </tr>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+<!--                <div class="dots" style="text-align:center">-->
+<!--                  <span class="dot" onclick="currentSlideHD(1)"></span>-->
+<!--                  <span class="dot" onclick="currentSlideHD(2)"></span>-->
+<!--                    <span class="dot" onclick="currentSlideHD(3)"></span>-->
+<!--                    <span class="dot" onclick="currentSlideHD(4)"></span>-->
+<!--                </div>-->
 
         <div class="footer">
             <div class="header">

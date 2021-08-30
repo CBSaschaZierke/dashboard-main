@@ -153,6 +153,125 @@ function mytest(){
 }
 
 color = '#bfab60'
+let bls = [
+	{
+		"name":"Baden-Württemberg",
+		"volume": 12,
+		"count": 100
+	},
+	{
+		"name":"Berlin",
+		"volume": 10,
+		"count": 12
+	},
+    {
+		"name":"Bayern",
+		"volume": 23,
+		"count": 51
+	},
+    {
+		"name":"Brandenburg",
+		"volume": 2,
+		"count": 6
+	},
+    {
+		"name":"Bremen",
+		"volume": 6,
+		"count": 11
+	},
+    {
+		"name":"Hamburg",
+		"volume": 11,
+		"count": 36
+	},
+    {
+		"name":"Hessen",
+		"volume": 13,
+		"count": 12
+	},
+    {
+		"name":"Mecklenburg-Vorpommern",
+		"volume": 14,
+		"count": 13
+	},
+    {
+		"name":"Niedersachsen",
+		"volume": 15,
+		"count": 14
+	},
+    {
+		"name":"Nordrhein-Westfalen",
+		"volume": 16,
+		"count": 15
+	},
+    {
+		"name":"Rheinland-Pfalz",
+		"volume": 17,
+		"count": 16
+	},
+    {
+		"name":"Saarland",
+		"volume": 18,
+		"count": 17
+	},
+    {
+		"name":"Sachsen",
+		"volume": 19,
+		"count": 18
+	},
+    {
+		"name":"Sachsen-Anhalt",
+		"volume": 20,
+		"count": 19
+	},
+    {
+		"name":"Schleswig-Holstein",
+		"volume": 21,
+		"count": 20
+	},
+    {
+		"name":"Thüringen",
+		"volume": 22,
+		"count": 20
+	},
+]
+let blsindex = 0
+function newSelect(){
+    let blheader = document.getElementById('bltheader')
+    let blheader2 = document.getElementById('bltheader2')
+    let blheader3 = document.getElementById('bltheader3')
+    let bltitem = document.getElementsByClassName('bltitem')
+    let bltitem1 = document.getElementById('bltitem1')
+    let bltitem2 = document.getElementById('bltitem2')
+    let bltitem3 = document.getElementById('bltitem3')
+    let bltitem4 = document.getElementById('bltitem4')
+    let bltitem5 = document.getElementById('bltitem5')
+    let bltitem6 = document.getElementById('bltitem6')
+    let img = document.getElementById('deutschlandkarte1')
+    let table = document.getElementsByClassName('tb')
+    if(blsindex == bls.length){blsindex=0}
+    if(blsindex < bls.length){
+
+        blheader.innerHTML = bls[blsindex].name
+        bltitem1.innerHTML = `${bls[blsindex].volume} Mrd €`
+        let prozent = Number(200 / bls[blsindex].count).toFixed(2)
+        bltitem2.innerHTML = `${bls[blsindex].count} (${prozent}%)`
+
+        blheader2.innerHTML = bls[blsindex].name
+        bltitem3.innerHTML = bls[blsindex].volume
+        let prozent2 = Number(200 / bls[blsindex].count).toFixed(2)
+        bltitem4.innerHTML = `${bls[blsindex].count} (${prozent}%)`
+
+        blheader3.innerHTML = bls[blsindex].name
+        bltitem5.innerHTML = bls[blsindex].volume
+        let prozent3 = Number(200 / bls[blsindex].count).toFixed(2)
+        bltitem6.innerHTML = `${bls[blsindex].count} (${prozent}%)`
+
+        img.src = `./DE/df${bls[blsindex].name}.png`
+        blsindex++
+    }
+    setTimeout(newSelect, 5000)
+}
 
 let tditemindex = 0
 function germanselect(){
