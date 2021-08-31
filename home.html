@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
-<body onload="newSelect()">  <!-- autoShowSlidesHD(), mytest() testSelect(),-->
+<body onload="newSelect(), footerautoslide(), mytest()">  <!-- autoShowSlidesHD(), mytest() testSelect(),-->
 <video muted autoplay loop>
     <source src="video.mp4" type="video/mp4">
 </video>
     <div class="container">
         <nav>
             <form>
-                <button class="navbtn btnactive" formaction="home.html">Home</button>
+                <button class="navbtn btnactive" formaction="home.html">Overview</button>
                 <button class="navbtn" formaction="commercial.html">Commercial</button>
                 <button class="navbtn" formaction="residential.html">Residential</button>
                 <button class="navbtn" formaction="healthcare.html">Health Care</button>
@@ -24,23 +24,39 @@
     </nav>
 
                 <div class="mySlidesHotDeal fade" style="display: grid">
-                    <img id="deutschlandkarte1" class="testimg"  src="./DE/dfBlank.png" alt="">
+                        <img id="dfBlank" class="testimg"  src="./DE/dfBlank.png" alt="">
+                        <img id="Berlin" class="testimg"  src="./DE/dfBerlin.png" alt="">
+                        <img id="Brandenburg" class="testimg"  src="./DE/dfBrandenburg.png" alt="">
+                        <img id="Baden-Württemberg" class="testimg"  src="./DE/dfBaden-Württemberg.png" alt="">
+                        <img id="Bayern" class="testimg"  src="./DE/dfBayern.png" alt="">
+                        <img id="Bremen" class="testimg"  src="./DE/dfBremen.png" alt="">
+                        <img id="Saarland" class="testimg"  src="./DE/dfSaarland.png" alt="">
+                        <img id="Sachsen-Anhalt" class="testimg"  src="./DE/dfSachsen-Anhalt.png" alt="">
+                        <img id="Sachsen" class="testimg"  src="./DE/dfSachsen.png" alt="">
+                        <img id="Schleswig-Holstein" class="testimg"  src="./DE/dfSchleswig-Holstein.png" alt="">
+                        <img id="Mecklenburg-Vorpommern" class="testimg"  src="./DE/dfMecklenburg-Vorpommern.png" alt="">
+                        <img id="Niedersachsen" class="testimg"  src="./DE/dfNiedersachsen.png" alt="">
+                        <img id="Nordrhein-Westfalen" class="testimg"  src="./DE/dfNordrhein-Westfalen.png" alt="">
+                        <img id="Hamburg" class="testimg"  src="./DE/dfHamburg.png" alt="">
+                        <img id="Hessen" class="testimg"  src="./DE/dfHessen.png" alt="">
+                        <img id="Rheinland-Pfalz" class="testimg"  src="./DE/dfRheinland-Pfalz.png" alt="">
+                        <img id="Thüringen" class="testimg"  src="./DE/dfThüringen.png" alt="">
 
                     <div class="hdheader">
                         <h1>Germany</h1>
-                        <h3>31.11 Mrd €</h3>
-                        <h3>200</h3>
+<!--                        <h3>31.11 Mrd €</h3>-->
+<!--                        <h3>200</h3>-->
                     </div>
                     <h3 class="leftheader">Processed</h3>
                     <h3 class="middleheader">In Process</h3>
                     <h3 class="rightheader">Closed</h3>
                     <div id="hotDealsCard1" class="hotDealsCard1 hotDealsCard testcard">
 <!--                        <div class="cardkopf">-->
-                            <h1>Germany</h1>
+                            <h1 class="gheader">Germany</h1>
                             <table class="tg">
                                 <tr>
-                                    <th>Volumen</th>
-                                    <th>Anzahl</th>
+                                    <th>Volume</th>
+                                    <th>Quantity</th>
                                 </tr>
                                 <tr class="tditem">
                                     <td>31.11 Mrd € (100%)</td>
@@ -50,8 +66,8 @@
                         <h1 id="bltheader">Sachsen</h1>
                         <table class="tb">
                             <tr>
-                                    <th class="vtest">Volumen</th>
-                                    <th class="atest">Anzahl</th>
+                                    <th class="vtest">Volume</th>
+                                    <th class="atest">Quantity</th>
                                 </tr>
                             <tr class="bltitem">
                                     <td id="bltitem1">10.12 Mrd € (10%)</td>
@@ -62,11 +78,11 @@
                     </div>
 
                     <div id="hotDealsCard2" class="hotDealsCard2 hotDealsCard testcard">
-                         <h1>Germany</h1>
+                         <h1 class="gheader">Germany</h1>
                             <table class="tg">
                                 <tr>
-                                    <th>Volumen</th>
-                                    <th>Anzahl</th>
+                                    <th>Volume</th>
+                                    <th>Quantity</th>
                                 </tr>
                                 <tr class="tditem">
                                     <td>31.11 Mrd € (100%)</td>
@@ -76,8 +92,8 @@
                         <h1 id="bltheader2">Sachsen</h1>
                         <table class="tb">
                             <tr>
-                                    <th class="vtest">Volumen</th>
-                                    <th class="atest">Anzahl</th>
+                                    <th class="vtest">Volume</th>
+                                    <th class="atest">Quantity</th>
                                 </tr>
                             <tr class="bltitem">
                                     <td id="bltitem3">10.12 Mrd € (10%)</td>
@@ -88,11 +104,11 @@
                     </div>
 
                     <div id="hotDealsCard3" class="hotDealsCard3 hotDealsCard testcard">
-                         <h1>Germany</h1>
+                         <h1 class="gheader">Germany</h1>
                             <table class="tg">
                                 <tr>
-                                    <th>Volumen</th>
-                                    <th>Anzahl</th>
+                                    <th>Volume</th>
+                                    <th>Quantity</th>
                                 </tr>
                                 <tr class="tditem">
                                     <td>31.11 Mrd € (100%)</td>
@@ -102,8 +118,8 @@
                         <h1 id="bltheader3">Sachsen</h1>
                         <table class="tb">
                             <tr>
-                                    <th>Volumen</th>
-                                    <th>Anzahl</th>
+                                    <th>Volume</th>
+                                    <th>Quantity</th>
                                 </tr>
                             <tr class="bltitem">
                                     <td id="bltitem5">10.12 Mrd € (10%)</td>

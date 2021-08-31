@@ -51,7 +51,7 @@
     }
 
     .navbtn{
-        margin-top: .3%;
+        margin-top: .4%;
         margin-left: 1%;
         width: 15%;
         height: 80%;
@@ -71,6 +71,7 @@
 
     .logo{
         margin-top: .3%;
+        margin-right: 2%;
         margin-bottom: .3%;
     }
 
@@ -239,7 +240,7 @@
             grid-row: 1/2;
             grid-column: 1/2;
             text-align: center;
-            padding-top: 55%;
+            padding-top: 60%;
         }
 
         .middleheader{
@@ -247,7 +248,7 @@
             grid-row: 1/2;
             grid-column: 2/3;
             text-align: center;
-            padding-top: 55%;
+            padding-top: 60%;
         }
 
         .rightheader{
@@ -255,7 +256,7 @@
             grid-row: 1/2;
             grid-column: 3/4;
             text-align: center;
-            padding-top: 55%;
+            padding-top: 60%;
         }
 
         .hotDealsCard1{
@@ -460,8 +461,8 @@
 
 .testcard{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 15% 30% 30%;
 }
 
 .tg{
@@ -470,17 +471,21 @@
     grid-row: 2/3;
 }
 #bltheader, #bltheader2, #bltheader3{
+    padding-top: 5%;
+    text-align: center;
     grid-column: 1/5;
     grid-row: 3/4;
     color: #bfab60;
     font-weight: 700;
 }
 .tb{
+    padding-top: 5%;
     text-align: center;
     grid-column: 1/5;
     grid-row: 4/5;
     color: #bfab60;
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 #bltitem3, #bltitem5, #bltitem1{
@@ -502,4 +507,10 @@
 .atest{
     grid-column: 3/5;
     grid-row: 4/5;
+}
+
+.gheader{
+    text-align: center;
+    font-size: 1.3rem;
+    grid-column: 1/5;
 }
